@@ -4,6 +4,7 @@ import (
 	"log"
 	"flag"
 	"strconv"
+	"github.com/joho/godotenv"
 	"github.com/gofiber/fiber/v3"
 	"github.com/gofiber/fiber/v3/middleware/logger"
 )
@@ -13,6 +14,13 @@ var (
 )
 
 func main() {
+	// Load dot environment.
+	err := godotenv.Load()
+	if err != nil {
+		log.Fatal("Error loading .env file")
+	}
+
+	// Flags.
 	flag.IntVar(&Port,
 		"port", 
 		3000, 
@@ -21,6 +29,7 @@ func main() {
 
 	flag.Parse()
 
+	// init Fiber.
 	app := fiber.New()
 	app.Use(logger.New())
 
