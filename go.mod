@@ -1,4 +1,4 @@
-module github.com/raritysoftware/GoRarityGo
+module github.com/lazypwny751/GoRarity
 
 go 1.23
 

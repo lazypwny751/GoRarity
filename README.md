@@ -1,4 +1,4 @@
-# GoRarityGo
+# GoRarity
 Simple GO backend template.
 
 ![image](https://github.com/user-attachments/assets/6f8ed93d-6edf-4086-b32a-af30696183e3)
@@ -17,8 +17,8 @@ This project is perfect for developers who want to quickly get started with Go, 
 
 # Installation.
 ```
-git clone "https://github.com/raritysoftware/GoRarityGo"
-cd "GoRarityGo"
+git clone "https://github.com/lazypwny751/GoRarity"
+cd "GoRarity"
 make build && make install
 ```
 
